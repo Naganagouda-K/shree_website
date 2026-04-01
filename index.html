@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aari Design Store</title>
 
 <style>
@@ -96,6 +97,61 @@ body {
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    
+    .nav-links {
+        margin-top: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 30px;
+    }
+    
+    .hero {
+        height: 50vh;
+        padding: 20px;
+    }
+    
+    .categories {
+        padding: 20px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .category {
+        width: auto;
+        padding: 20px;
+        min-height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 25px;
+    }
+    
+    .hero p {
+        font-size: 14px;
+    }
+    
+    .categories {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+    
+    .category {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
 </style>
 </head>
