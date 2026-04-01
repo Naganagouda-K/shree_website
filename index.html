@@ -122,17 +122,25 @@ body {
 .category {
     background: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     width: 160px;
     text-align: center;
     text-decoration: none;
-    color: black;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    color: #222;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    animation: floatCard 6s ease-in-out infinite;
 }
 
 .category:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(40, 116, 240, 0.25);
+}
+
+@keyframes floatCard {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
 }
 
 /* Footer */
