@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aari Design Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f1f3f6;
+}
+
+/* Navbar */
+.navbar {
+    background: #2874f0;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    height: 60vh;
+    background: linear-gradient(to right, #2874f0, #00c6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ff9f00;
+    color: white;
+    cursor: pointer;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+    background: #172337;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">🛒 Shree Aari Designs</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="beads.html">Products</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Welcome to Aari Designs Store</h1>
+    <p>Explore beautiful handmade designs</p>
+    <!-- <a href="products.html"><button>Shop Now</button></a> -->
+</div>
+
+<div class="categories">
+    <a href="beads.html?category=beads" class="category">👕 Beads Work</a>
+    <a href="thread.html?category=thread" class="category">👕 Thread Work</a>
+    <a href="kundan.html?category=kundan" class="category">👕 Kundan Work</a>
+    <a href="zardosi.html?category=zardosi" class="category">👕 Zardosi Work</a>
+</div>
+
+<div class="footer">
+    © 2026 Aari Store
+</div>
+
+</body>
+</html>
